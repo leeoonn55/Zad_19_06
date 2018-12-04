@@ -6,6 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import DevTools from  './DevTools'
+import {reducer} from './reducers';
+
 
 
 const store = createStore(reducer, DevTools.instrument());
